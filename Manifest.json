@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "VELVET — Every Choice Has a Story",
+  "short_name": "VELVET",
+  "description": "Платформа интерактивных историй.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#10090d",
+  "theme_color": "#10090d",
+  "icons": [
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
