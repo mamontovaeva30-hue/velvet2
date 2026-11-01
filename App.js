@@ -226,3 +226,13 @@ renderUpdates("app");
 renderProjects();
 
 console.log("VELVET запущен.");
+// Регистрация сервис-воркера VELVET
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("VELVET: офлайн-режим подключён"))
+      .catch((error) => {
+        console.error("VELVET: ошибка офлайн-режима", error);
+      });
+  });
+}
