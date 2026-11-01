@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10090d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="VELVET">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>VELVET — Every Choice Has a Story</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">V</div>
+        <div>
+          <div class="brand-name">VELVET</div>
+          <div class="brand-subtitle">EVERY CHOICE HAS A STORY</div>
+        </div>
+      </div>
+
+      <div class="sidebar-label">МЕНЮ</div>
+
+      <nav class="navigation">
+        <button class="nav-item active" data-page="home">
+          <span>⌂</span> Главная
+        </button>
+        <button class="nav-item" data-page="catalog">
+          <span>▤</span> Каталог
+        </button>
+        <button class="nav-item" data-page="updates">
+          <span>◈</span> Обновления
+        </button>
+        <button class="nav-item" data-page="community">
+          <span>◎</span> Сообщество
+        </button>
+        <button class="nav-item" data-page="activity">
+          <span>◷</span> Моя библиотека
+        </button>
+      </nav>
+
+      <div class="sidebar-label">ТВОРЧЕСТВО</div>
+
+      <nav class="navigation">
+        <button class="nav-item" data-page="studio">
+          <span>✧</span> Авторская студия
+        </button>
+        <button class="nav-item" data-page="pro">
+          <span>♛</span> VELVET PRO
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="profile-mini">
+          <div class="avatar">V</div>
+          <div>
+            <strong>Гость</strong>
+            <small>Аккаунт не подключён</small>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <header class="topbar">
+        <div class="breadcrumb">VELVET <span>/</span> <b id="page-name">Главная</b></div>
+        <div class="topbar-actions">
+          <button class="icon-button" data-page="updates" aria-label="Уведомления">♧</button>
+          <button class="login-button" data-page="profile">ВОЙТИ ↗</button>
+        </div>
+      </header>
+
+      <!-- HOME -->
+      <section class="page active" id="home">
+
+        <div class="hero">
+          <div class="hero-content">
+            <div class="eyebrow">THE WORLD OF INTERACTIVE STORIES</div>
+            <h1>Каждый выбор<br><em>имеет историю.</em></h1>
+            <p>
+              Миры, в которых решения меняют всё.
+              Истории, которые невозможно просто прочитать.
+            </p>
+            <button class="primary-button" data-page="catalog">
+              ОТКРЫТЬ КАТАЛОГ <span>↗</span>
+            </button>
+          </div>
+          <div class="hero-number">01</div>
+          <div class="hero-decoration">V</div>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">DISCOVER SOMETHING NEW</div>
+            <h2>Выбор редакции</h2>
+          </div>
+          <button class="text-button" data-page="catalog">Весь каталог ↗</button>
+        </div>
+
+        <div class="story-grid" id="featured-stories">
+          <article class="story-card">
+            <div class="story-cover cover-one">
+              <span class="cover-tag">THRILLER</span>
+              <div class="cover-title">THE<br>LAST<br>SECRET</div>
+              <div class="cover-number">001</div>
+            </div>
+            <div class="story-info">
+              <div class="story-meta">16+ · 12 ЭПИЗОДОВ</div>
+              <h3>Последний секрет</h3>
+              <p>Некоторые тайны лучше не раскрывать.</p>
+              <button class="outline-button" data-page="catalog">Подробнее ↗</button>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-cover cover-two">
+              <span class="cover-tag">MYSTERY</span>
+              <div class="cover-title">NO<br>RETURN</div>
+              <div class="cover-number">002</div>
+            </div>
+            <div class="story-info">
+              <div class="story-meta">18+ · 18 ЭПИЗОДОВ</div>
+              <h3>Без возврата</h3>
+              <p>У каждого решения есть последствия.</p>
+              <button class="outline-button" data-page="catalog">Подробнее ↗</button>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-cover cover-three">
+              <span class="cover-tag">DRAMA</span>
+              <div class="cover-title">AFTER<br>MIDNIGHT</div>
+              <div class="cover-number">003</div>
+            </div>
+            <div class="story-info">
+              <div class="story-meta">16+ · 9 ЭПИЗОДОВ</div>
+              <h3>После полуночи</h3>
+              <p>Одна встреча может изменить целую жизнь.</p>
+              <button class="outline-button" data-page="catalog">Подробнее ↗</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="announcement">
+          <div class="announcement-icon">✧</div>
+          <div>
+            <div class="eyebrow">WELCOME TO VELVET</div>
+            <h3>Твоя история начинается здесь.</h3>
+            <p>Создавай собственные миры или исследуй уже существующие.</p>
+          </div>
+          <button class="outline-button" data-page="studio">СТАТЬ АВТОРОМ ↗</button>
+        </div>
+
+      </section>
+
+      <!-- CATALOG -->
+      <section class="page" id="catalog">
+        <div class="page-intro">
+          <div class="eyebrow">EXPLORE OUR WORLDS</div>
+          <h1>Каталог <em>историй.</em></h1>
+          <p>Найди историю, которая останется с тобой.</p>
+        </div>
+
+        <div class="catalog-tools">
+          <input id="story-search" type="search" placeholder="Поиск по названию...">
+          <select id="genre-filter">
+            <option value="all">Все жанры</option>
+            <option value="thriller">Триллер</option>
+            <option value="mystery">Мистика и тайны</option>
+            <option value="drama">Драма</option>
+            <option value="fantasy">Фэнтези</option>
+            <option value="detective">Детектив</option>
+          </select>
+          <select id="age-filter">
+            <option value="all">Любой рейтинг</option>
+            <option value="12">12+</option>
+            <option value="16">16+</option>
+            <option value="18">18+</option>
+          </select>
+        </div>
+
+        <div class="story-grid" id="catalog-grid"></div>
+      </section>
+
+      <!-- UPDATES -->
+      <section class="page" id="updates">
+        <div class="page-intro">
+          <div class="eyebrow">WHAT'S NEW</div>
+          <h1>Новости <em>VELVET.</em></h1>
+          <p>Всё, что происходит в нашем мире.</p>
+        </div>
+
+        <div class="update-tabs">
+          <button class="update-tab active" data-update="app">Приложение</button>
+          <button class="update-tab" data-update="news">Новости</button>
+          <button class="update-tab" data-update="stories">Истории</button>
+        </div>
+
+        <div id="updates-list" class="updates-list"></div>
+      </section>
+
+      <!-- COMMUNITY -->
+      <section class="page" id="community">
+        <div class="page-intro">
+          <div class="eyebrow">THE VELVET COMMUNITY</div>
+          <h1>Сообщество <em>читателей.</em></h1>
+          <p>Обсуждения, впечатления и новые знакомства.</p>
+        </div>
+
+        <div class="empty-state">
+          <div class="empty-symbol">◎</div>
+          <h2>Здесь скоро появится жизнь.</h2>
+          <p>Лента публикаций, комментарии и реакции появятся после подключения базы данных.</p>
+        </div>
+      </section>
+
+      <!-- LIBRARY -->
+      <section class="page" id="activity">
+        <div class="page-intro">
+          <div class="eyebrow">YOUR PERSONAL SPACE</div>
+          <h1>Моя <em>библиотека.</em></h1>
+          <p>Истории, которые ты читаешь и сохраняешь.</p>
+        </div>
+
+        <div class="empty-state">
+          <div class="empty-symbol">▤</div>
+          <h2>Твоя библиотека пока пуста.</h2>
+          <p>Сохраняй истории из каталога, чтобы вернуться к ним позже.</p>
+          <button class="primary-button" data-page="catalog">ПЕРЕЙТИ В КАТАЛОГ ↗</button>
+        </div>
+      </section>
+
+      <!-- AUTHOR STUDIO -->
+      <section class="page" id="studio">
+        <div class="page-intro">
+          <div class="eyebrow">CREATE YOUR OWN WORLD</div>
+          <h1>Авторская <em>студия.</em></h1>
+          <p>Место, где идеи становятся историями.</p>
+        </div>
+
+        <div class="studio-grid">
+          <div class="studio-panel">
+            <div class="panel-icon">✧</div>
+            <h2>Новый проект</h2>
+            <p>Начни создавать собственную интерактивную историю.</p>
+            <button class="primary-button" id="create-project">СОЗДАТЬ ПРОЕКТ +</button>
+          </div>
+
+          <div class="studio-panel">
+            <div class="panel-icon">▤</div>
+            <h2>Мои проекты</h2>
+            <p>Черновики и истории, над которыми ты работаешь.</p>
+            <div id="my-projects" class="project-list">Пока нет проектов.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADMIN -->
+      <section class="page" id="pro">
+        <div class="page-intro">
+          <div class="eyebrow">VELVET PLATFORM MANAGEMENT</div>
+          <h1>VELVET <em>PRO.</em></h1>
+          <p>Центр управления платформой.</p>
+        </div>
+
+        <div class="admin-warning">
+          <span>♛</span>
+          <div>
+            <strong>Панель администратора</strong>
+            <p>Пока это интерфейс-заготовка. Настоящий доступ администратора будет проверяться сервером, а не паролем в коде сайта.</p>
+          </div>
+        </div>
+
+        <div class="admin-grid">
+          <div class="admin-card">
+            <span>▤</span>
+            <h3>Каталог</h3>
+            <p>Управление историями и разделами.</p>
+          </div>
+          <div class="admin-card">
+            <span>◈</span>
+            <h3>Обновления</h3>
+            <p>Новости платформы и авторов.</p>
+          </div>
+          <div class="admin-card">
+            <span>◎</span>
+            <h3>Модерация</h3>
+            <p>Проверка новых публикаций.</p>
+          </div>
+          <div class="admin-card">
+            <span>⚙</span>
+            <h3>Настройки</h3>
+            <p>Управление функциями VELVET.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section class="page" id="profile">
+        <div class="page-intro">
+          <div class="eyebrow">YOUR VELVET ACCOUNT</div>
+          <h1>Твой <em>профиль.</em></h1>
+          <p>Личное пространство читателя и автора.</p>
+        </div>
+
+        <div class="empty-state">
+          <div class="empty-symbol">V</div>
+          <h2>Добро пожаловать в VELVET.</h2>
+          <p>Настоящая регистрация и вход появятся после подключения системы аккаунтов.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-brand">VELVET</div>
+        <div>EVERY CHOICE HAS A STORY</div>
+        <div>© 2026 VELVET PLATFORM</div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
